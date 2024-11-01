@@ -72,7 +72,7 @@ namespace esphome
         {
             if (!obj->has_state())
                 return;
-            uint8_t serverAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+            uint8_t serverAddress[] = {0xEC, 0xDA, 0x3B, 0xBD, 0x6A, 0x88};
             std::string line;
             const char *state_s = state ? "ON" : "OFF";
 
@@ -112,7 +112,7 @@ namespace esphome
         {
             if (!obj->has_state())
                 return;
-            uint8_t serverAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+            uint8_t serverAddress[] = {0xEC, 0xDA, 0x3B, 0xBD, 0x6A, 0x88};
             std::string line;
 
             line = str_snake_case(App.get_name());
@@ -150,7 +150,7 @@ namespace esphome
         {
             if (!obj->has_state())
                 return;
-            uint8_t serverAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+            uint8_t serverAddress[] = {0xEC, 0xDA, 0x3B, 0xBD, 0x6A, 0x88};
             std::string line;
             int8_t accuracy = obj->get_accuracy_decimals();
 
