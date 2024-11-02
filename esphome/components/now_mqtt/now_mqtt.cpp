@@ -13,7 +13,7 @@ namespace esphome
         static const char *const TAG = "now_mqtt.sensor";
         void Now_MQTTComponent::setup()
         {
-            uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+            uint8_t broadcastAddress[] = {0xec, 0xda, 0x3b, 0xbd, 0x6a, 0x88};
             esp_now_peer_info_t peerInfo = {};
 
             ESP_LOGD(TAG, "Setting up ESP-Now-MQTT...");
